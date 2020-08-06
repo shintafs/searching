@@ -50,7 +50,7 @@
              </div>
 
              <div class="form-group row">
-                 <label for="formattedname" class="col-sm-2 col-form-label">formattedname</label>
+                 <label for="formattedname" class="col-sm-2 col-form-label">Name</label>
                  <div class="col-sm-10">
                      <input type="text" class="form-control" id="formattedname" mame="formattedname" value="">
                  </div>
@@ -58,7 +58,7 @@
 
              <div class="form-group row float-right">
                  <div class="col-sm-10">
-                     <button type="search   " class="btn btn-primary">Search</button>
+                     <button type="submit" class="btn btn-primary">Search</button>
                  </div>
              </div>
 

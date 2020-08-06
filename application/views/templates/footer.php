@@ -47,7 +47,7 @@
 
 <!-- Custom scripts for all pages-->
 <script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
-<script src="<?= base_url('assets/'); ?>dataTables/DataTables/datatables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 
 
 <script type="text/javascript">
@@ -56,49 +56,10 @@
     });
 </script>
 
-<script>
-    $('.custom-file-input').on('change', function() {
-        let fileName = $(this).val().split('\\').pop();
-        $(this).next('.custom-file-label').addClass("selected").html(fileName);
-    });
-
-    $('.form-check-input').on('click', function() {
-        const menuId = $(this).data('menu');
-        const roleId = $(this).data('role');
-
-        $.ajax({
-            url: "<?= base_url('admin/changeaccess'); ?>",
-            type: 'post',
-            data: {
-                menuId: menuId,
-                roleId: roleId
-            },
-            success: function() {
-                document.location.href = "<?= base_url('admin/roleaccess/'); ?>" + roleId;
-            }
-        })
-    });
-</script>
-
-
-
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-<script>
-    $(function() {
-        $.ajax({
-            dataType: "json",
-            url: "https://gist.githubusercontent.com/quannt/d60905a978058de2312b/raw/2d4ab1df422dc19b7214d10ffd5e80795e2aa0a5/gistfile1.txt",
-            success: function(data) {
-                $("#progressbar").progressbar({
-                    value: data.progressbar
-                });
-            }
-        });
-    });
-</script>
 
 <!-- Logout Delete Confirmation-->
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
