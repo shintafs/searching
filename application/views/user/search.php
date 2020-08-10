@@ -5,7 +5,7 @@
      <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
      <div class="row">
          <div class="col-lg-8">
-
+             <?= form_open_multipart('user/search'); ?>
              <div class="form-group row">
                  <label for="startdate" class="col-sm-2 col-form-label">Start Date</label>
                  <div class="col-sm-10">
@@ -22,43 +22,40 @@
              </div>
 
              <div class="form-group row">
-                 <label for="pa" class="col-sm-2 col-form-label">Personnel Area</label>
+                 <select class="form-control col-sm-2 col-form-label">
+                     <option value="pa">pa</option>
+                     <option value="psa">psa</option>
+                 </select>
+                 <!-- <label for="pa" class="col-sm-2 col-form-label">Personnel Area</label> -->
                  <div class="col-sm-10">
-                     <input type="text" class="form-control" id="pa" mame="pa" value="">
-                 </div>
-             </div>
-
-             <div class="form-group row">
-                 <label for="psa" class="col-sm-2 col-form-label">Personnel Subarea</label>
-                 <div class="col-sm-10">
-                     <input type="text" class="form-control" id="psa" mame="psa" value="">
+                     <input type="text" class="form-control" value="">
                  </div>
              </div>
 
              <div class="form-group row">
                  <label for="costcenter" class="col-sm-2 col-form-label">Costcenter</label>
                  <div class="col-sm-10">
-                     <input type="text" class="form-control" id="costcenter" mame="costcenter" value="">
+                     <input type="text" class="form-control" id="costcenter" name="costcenter" value="">
                  </div>
              </div>
 
              <div class="form-group row">
                  <label for="organization" class="col-sm-2 col-form-label">Organization</label>
                  <div class="col-sm-10">
-                     <input type="text" class="form-control" id="organization" mame="organization" value="">
+                     <input type="text" class="form-control" id="organization" name="organization" value="">
                  </div>
              </div>
 
              <div class="form-group row">
                  <label for="formattedname" class="col-sm-2 col-form-label">Name</label>
                  <div class="col-sm-10">
-                     <input type="text" class="form-control" id="formattedname" mame="formattedname" value="">
+                     <input type="text" class="form-control" id="formattedname" name="formattedname" value="">
                  </div>
              </div>
 
              <div class="form-group row float-right">
                  <div class="col-sm-10">
-                     <button type="submit" class="btn btn-primary">Search</button>
+                     <button type="submit" name="submit" class="btn btn-primary">Search</button>
                  </div>
              </div>
 

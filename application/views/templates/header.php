@@ -17,7 +17,7 @@
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <link href="<?= base_url('assets/'); ?>dataTables/DataTables/datatables.min.css" rel="stylesheet">
 
 </head>
 

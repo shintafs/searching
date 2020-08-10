@@ -4,10 +4,10 @@
  *
  * To rebuild or modify this file with the latest versions of the included
  * software please visit:
- *   https://datatables.net/download/#bs4/dt-1.10.21
+ *   https://datatables.net/download/#bs4/dt-1.10.20
  *
  * Included libraries:
- *   DataTables 1.10.21
+ *   DataTables 1.10.20
  */
 
 table.dataTable {
@@ -173,11 +173,8 @@ div.dataTables_scrollFoot > .dataTables_scrollFootInner > table {
   div.dataTables_wrapper div.dataTables_paginate {
     text-align: center;
   }
-  div.dataTables_wrapper div.dataTables_paginate ul.pagination {
-    justify-content: center !important;
-  }
 }
-table.dataTable.table-sm > thead > tr > th :not(.sorting_disabled) {
+table.dataTable.table-sm > thead > tr > th {
   padding-right: 20px;
 }
 table.dataTable.table-sm .sorting:before,
@@ -192,9 +189,6 @@ table.dataTable.table-sm .sorting_desc:after {
   top: 5px;
 }
 
-table.table-bordered.dataTable {
-  border-right-width: 0;
-}
 table.table-bordered.dataTable th,
 table.table-bordered.dataTable td {
   border-left-width: 0;
@@ -202,7 +196,7 @@ table.table-bordered.dataTable td {
 table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable th:last-child,
 table.table-bordered.dataTable td:last-child,
 table.table-bordered.dataTable td:last-child {
-  border-right-width: 1px;
+  border-right-width: 0;
 }
 table.table-bordered.dataTable tbody th,
 table.table-bordered.dataTable tbody td {
